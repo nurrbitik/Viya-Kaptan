@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DenizYolculuğu - Denizlerin Büyüsünü Keşfet</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#0ea5e9',
+        secondary: '#06b6d4'
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+      }
+    }
+  }
+};
+</script>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="bg-white/95 backdrop-blur-sm fixed w-full top-0 z-50 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex-shrink-0">
+  <div class="flex items-center gap-3">
+    <div class="flex items-center gap-3">
+      <img src="Adsız_tasarım-removebg-preview.png" alt="Logo" class="w-[70px] h-[70px]" />
+      <a href="index.html" class="text-2xl font-['Pacifico'] text-primary">Viya Kaptan</a>
+    </div>
+</div>
+</div>
+<nav class="hidden md:block">
+<div class="ml-10 flex items-baseline space-x-8">
+<a href="#" class="nav-link text-gray-900 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Ana Sayfa</a>
+<a href="#" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Denizcilik</a>
+<a href="#" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Karavan</a>
+<a href="#" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Hakkımızda</a>
+</div>
+</nav>
+<div class="md:hidden">
+<button id="mobile-menu-button" class="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-primary">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+<div class="px-2 pt-2 pb-3 space-y-1">
+<a href="#" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-primary">Ana Sayfa</a>
+<a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Denizcilik</a>
+<a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Karavan</a>
+<a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Hakkımızda</a>
+</div>
+</div>
+</header>
+<!-- Main Content Container -->
+<div id="main-content">
+<!-- Ana Sayfa -->
+<div id="home-page" class="page-content">
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=beautiful%20turquoise%20ocean%20water%20with%20sailing%20yacht%20in%20distance%20aerial%20view%20crystal%20clear%20blue%20sea%20mediterranean%20style%20peaceful%20serene%20nautical%20adventure%20sailing%20boat%20horizon%20summer%20vacation%20tropical%20paradise%20azure%20waters%20maritime%20journey&width=1920&height=1080&seq=hero1&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-cyan-900/50"></div>
+<div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+<h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+Denizlerin<br>
+<span class="text-cyan-300">Büyüsünü Keşfet</span>
+</h1>
+<p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+Yelkenlerle açık denizlerde özgürlüğü yaşayın, karavan maceraları ile kıyı rotalarını keşfedin
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a id="go-to-blog" class="bg-primary hover:bg-blue-600 text-white px-8 py-4 !rounded-button text-lg font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap inline-block text-center" href="#blog-page">
+Denizcilik Rehberi
+</a>
+<a id="go-to-karavan" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button text-lg font-semibold transition-all duration-300 whitespace-nowrap inline-block text-center" href="#karavan-page">
+Karavan Rehberi
+</a>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section id="denizcilik" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Denizcilik Dünyasına Hoş Geldiniz</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Denizlerin derinliklerinden karavan yolculuklarına, macera dolu hikayeler ve rehberler</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+<i class="ri-ship-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Yelkenli Maceraları</h3>
+<p class="text-gray-600 leading-relaxed">Açık denizlerde yelken açmanın heyecanı, rüzgarla dans eden teknelerin büyülü dünyası</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-xl mb-6">
+<i class="ri-roadster-line text-2xl text-secondary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Karavan Rotaları</h3>
+<p class="text-gray-600 leading-relaxed">Kıyı şeridindeki en güzel karavan kampları, deniz manzaralı konaklama noktaları</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-cyan-500/10 rounded-xl mb-6">
+<i class="ri-compass-3-line text-2xl text-cyan-500"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Seyir Rehberleri</h3>
+<p class="text-gray-600 leading-relaxed">Denizcilik teknikleri, navigasyon ipuçları ve güvenli seyir için pratik bilgiler</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Posts -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Son Yazılar</h2>
+<p class="text-xl text-gray-600">Denizcilik dünyasından en güncel haberler ve rehberler</p>
+</div>
+<div id="blog-detail" class="hidden"></div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=sailing%20yacht%20sunset%20golden%20hour%20peaceful%20ocean%20waves%20romantic%20sailing%20adventure%20beautiful%20seascape%20nautical%20lifestyle%20maritime%20photography%20serene%20waters%20sailing%20boat%20evening%20light&width=400&height=300&seq=post1&orientation=landscape')"></div>
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-3">
+<i class="ri-calendar-line mr-2"></i>
+15 Mart 2024
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Gün Batımında Yelken Açmak</h3>
+<p class="text-gray-600 mb-4">Akşam saatlerinde denize açılmanın büyüsü ve unutulmaz anlar yaşamanın sırları...</p>
+<a href="/blog/yazi-slugu"
+   class="read-more text-primary hover:text-blue-600 font-semibold"
+   data-slug="yazi-slugu"
+   data-load="detail">
+  Devamını Oku →
+</a>
+
+</div>
+</article>
+<article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=caravan%20camping%20by%20the%20sea%20coastal%20road%20trip%20beach%20camping%20rv%20lifestyle%20ocean%20view%20camping%20seaside%20adventure%20mobile%20home%20travel%20freedom%20coastal%20journey%20beach%20vacation&width=400&height=300&seq=post2&orientation=landscape')"></div>
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-3">
+<i class="ri-calendar-line mr-2"></i>
+12 Mart 2024
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Deniz Kenarında Karavan Kampı</h3>
+<p class="text-gray-600 mb-4">Türkiye'nin en güzel kıyı şeridindeki karavan kampları ve konaklama ipuçları...</p>
+<a href="Deniz-Kenarında-Karavan-Kampı.html" class="text-primary hover:text-blue-600 font-semibold">Devamını Oku →</a>
+</div>
+</article>
+<article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=nautical%20navigation%20compass%20sea%20chart%20maritime%20equipment%20sailing%20instruments%20boat%20navigation%20tools%20marine%20compass%20sailing%20preparation%20nautical%20charts%20seafaring%20equipment&width=400&height=300&seq=post3&orientation=landscape')"></div>
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-3">
+<i class="ri-calendar-line mr-2"></i>
+8 Mart 2024
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Denizcilik Navigasyon Temelleri</h3>
+<p class="text-gray-600 mb-4">Güvenli seyir için bilmeniz gereken navigasyon teknikleri ve ekipmanları...</p>
+<a href="#" class="text-primary hover:text-blue-600 font-semibold">Devamını Oku →</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-primary to-secondary">
+<div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold text-white mb-6">Denizcilik Topluluğumuza Katılın</h2>
+<p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Deniz tutkunları ile deneyimlerinizi paylaşın, yeni arkadaşlıklar kurun ve unutulmaz maceralar yaşayın</p>
+<button class="bg-white text-primary hover:bg-gray-100 px-8 py-4 !rounded-button text-lg font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
+Hemen Başlayın
+</button>
+</div>
+</section>
+</div>
+<!-- Blog Sayfası -->
+<div id="blog-page" class="page-content hidden">
+<section class="pt-24 pb-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h1 class="text-5xl font-bold text-gray-900 mb-6">Denizcilik Blog</h1>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Denizlerin derinliklerinden yelkenli maceralara, denizcilik dünyasının en güncel haberleri</p>
+</div>
+<!-- Blog Grid -->
+<div class="grid lg:grid-cols-3 gap-8">
+<!-- Main Content -->
+<div class="lg:col-span-2">
+<div class="space-y-8">
+<article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20sailing%20yacht%20mediterranean%20sea%20crystal%20clear%20turquoise%20water%20professional%20sailing%20adventure%20premium%20yacht%20charter%20elegant%20sailboat%20pristine%20ocean%20nautical%20luxury&width=800&height=400&seq=blog1&orientation=landscape')"></div>
+<div class="p-8">
+<div class="flex items-center text-sm text-gray-500 mb-4">
+<i class="ri-calendar-line mr-2"></i>
+20 Mart 2024
+<span class="mx-2">•</span>
+<i class="ri-user-line mr-2"></i>
+Kaptan Mehmet Özkan
+</div>
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Akdeniz'de Lüks Yelkenli Turu</h2>
+<p class="text-gray-600 mb-6 leading-relaxed">Akdeniz'in turkuaz sularında unutulmaz bir yelkenli deneyimi yaşadık. Antalya'dan başlayarak Kaş, Kalkan ve Fethiye rotasında geçirdiğimiz 7 günlük macera...</p>
+<a href="blog.html" data-readdy="true" class="inline-flex items-center text-primary hover:text-blue-600 font-semibold">
+Devamını Oku
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</article>
+<article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=sailing%20techniques%20wind%20direction%20nautical%20skills%20sailing%20education%20boat%20handling%20maritime%20training%20sailing%20instructor%20wind%20patterns%20sailing%20basics%20nautical%20knowledge&width=800&height=400&seq=blog2&orientation=landscape')"></div>
+<div class="p-8">
+<div class="flex items-center text-sm text-gray-500 mb-4">
+<i class="ri-calendar-line mr-2"></i>
+18 Mart 2024
+<span class="mx-2">•</span>
+<i class="ri-user-line mr-2"></i>
+Denizci Ayşe Kaya
+</div>
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Yelkencilik Teknikleri: Rüzgar Okuma</h2>
+<p class="text-gray-600 mb-6 leading-relaxed">Başarılı bir yelkenci olmak için rüzgarı doğru okumak kritik öneme sahiptir. Bu rehberde rüzgar yönlerini, şiddetini ve değişimlerini nasıl analiz edeceğinizi...</p>
+<a href="blog2.html" class="inline-flex items-center text-primary hover:text-blue-600 font-semibold">
+Devamını Oku
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</article>
+<article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+<div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=marina%20harbor%20sailing%20boats%20yacht%20club%20nautical%20lifestyle%20boat%20docking%20maritime%20community%20sailing%20harbor%20waterfront%20marina%20facilities%20boat%20maintenance&width=800&height=400&seq=blog3&orientation=landscape')"></div>
+<div class="p-8">
+<div class="flex items-center text-sm text-gray-500 mb-4">
+<i class="ri-calendar-line mr-2"></i>
+15 Mart 2024
+<span class="mx-2">•</span>
+<i class="ri-user-line mr-2"></i>
+Marina Uzmanı Emre Demir
+</div>
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Türkiye'nin En İyi Marinaları</h2>
+<p class="text-gray-600 mb-6 leading-relaxed">Ege ve Akdeniz kıyılarındaki premium marinalar, sunduğu hizmetler ve tekne sahipleri için en uygun seçenekler hakkında detaylı rehber...</p>
+<a href="https://readdy.ai/home/70fc6060-bed1-461f-a2ee-5bd7de884a7b/7b7a4209-bd57-4063-9630-26e916a47778" data-readdy="true" class="inline-flex items-center text-primary hover:text-blue-600 font-semibold">
+Devamını Oku
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</article>
+</div>
+</div>
+<!-- Sidebar -->
+<div class="lg:col-span-1">
+<div class="sticky top-24 space-y-8">
+<!-- Categories -->
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+<h3 class="text-xl font-bold text-gray-900 mb-4">Kategoriler</h3>
+<div class="space-y-3">
+<a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors">
+<span>Yelkenli Maceraları</span>
+<span class="text-sm bg-gray-100 px-2 py-1 rounded-full">12</span>
+</a>
+<a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors">
+<span>Navigasyon</span>
+<span class="text-sm bg-gray-100 px-2 py-1 rounded-full">8</span>
+</a>
+<a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors">
+<span>Marina Rehberleri</span>
+<span class="text-sm bg-gray-100 px-2 py-1 rounded-full">15</span>
+</a>
+<a href="#" class="flex items-center justify-between text-gray-600 hover:text-primary transition-colors">
+<span>Tekne Bakımı</span>
+<span class="text-sm bg-gray-100 px-2 py-1 rounded-full">6</span>
+</a>
+</div>
+</div>
+<!-- Popular Posts -->
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+ <h3 class="text-xl font-bold text-gray-900 mb-4">Popüler Yazılar</h3>
+<div class="space-y-4">
+<div class="flex space-x-3">
+<div class="w-16 h-16 bg-cover bg-center rounded-lg flex-shrink-0" style="background-image: url('https://readdy.ai/api/search-image?query=sailing%20sunset%20golden%20hour%20peaceful%20ocean&width=100&height=100&seq=pop1&orientation=squarish')"></div>
+<div>
+<a href="index.html"><h4 class="text-sm font-semibold text-gray-900 mb-1">Gün Batımında Yelken Açmak</h4> </a>
+<p class="text-xs text-gray-500">15 Mart 2024</p>
+</div>
+</div>
+<div class="flex space-x-3">
+<div class="w-16 h-16 bg-cover bg-center rounded-lg flex-shrink-0" style="background-image: url('https://readdy.ai/api/search-image?query=nautical%20compass%20navigation%20tools&width=100&height=100&seq=pop2&orientation=squarish')"></div>
+<div>
+<a href="index.html"><h4 class="text-sm font-semibold text-gray-900 mb-1">Navigasyon Temelleri</h4></a>
+<p class="text-xs text-gray-500">8 Mart 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Karavan Sayfası -->
+<div id="karavan-page" class="page-content hidden">
+<section class="pt-24 pb-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h1 class="text-5xl font-bold text-gray-900 mb-6">Karavan Rehberi</h1>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Deniz kenarındaki en güzel karavan rotaları ve kamp alanları</p>
+</div>
+<!-- Route Cards -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=caravan%20camping%20aegean%20coast%20turkey%20beautiful%20seaside%20camping%20rv%20by%20the%20sea%20coastal%20road%20trip%20mediterranean%20camping%20beach%20caravan%20site%20ocean%20view%20camping&width=400&height=300&seq=caravan1&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Ege Kıyıları Rotası</h3>
+<p class="text-gray-600 mb-4">Çeşme'den Bodrum'a uzanan muhteşem kıyı şeridi boyunca karavan dostu kamp alanları</p>
+<div class="flex items-center text-sm text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+450 km • 7 gün
+</div>
+
+  <button
+          onclick="window.location.href='Ege-Kıyıları-Rota-Detayları.html'"
+          class="w-full bg-primary hover:bg-blue-600 text-white py-3 rounded-md font-semibold transition-colors whitespace-nowrap"
+  >
+    Rotayı İncele
+  </button>
+
+
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=caravan%20camping%20mediterranean%20coast%20antalya%20kas%20kalkan%20seaside%20rv%20camping%20turquoise%20coast%20beach%20camping%20coastal%20caravan%20journey%20scenic%20camping&width=400&height=300&seq=caravan2&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Akdeniz Turkuaz Rotası</h3>
+<p class="text-gray-600 mb-4">Antalya, Kaş, Kalkan güzergahında kristal berraklığındaki koylar ve kamp alanları</p>
+<div class="flex items-center text-sm text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+380 km • 5 gün
+</div>
+<button class="w-full bg-primary hover:bg-blue-600 text-white py-3 !rounded-button font-semibold transition-colors whitespace-nowrap">
+Rotayı İncele
+</button>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=caravan%20camping%20black%20sea%20coast%20sinop%20amasra%20coastal%20camping%20rv%20journey%20seaside%20adventure%20black%20sea%20caravan%20route%20scenic%20coastal%20drive&width=400&height=300&seq=caravan3&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Karadeniz Keşif Rotası</h3>
+<p class="text-gray-600 mb-4">Sinop, Amasra ve çevresindeki saklı koylar ile doğal kamp alanları</p>
+<div class="flex items-center text-sm text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+520 km • 8 gün
+</div>
+<button class="w-full bg-primary hover:bg-blue-600 text-white py-3 !rounded-button font-semibold transition-colors whitespace-nowrap">
+Rotayı İncele
+</button>
+</div>
+</div>
+</div>
+<!-- Camping Tips -->
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Karavan Kampı İpuçları</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mx-auto mb-4">
+<i class="ri-shield-check-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Güvenlik</h3>
+<p class="text-gray-600 text-sm">Kamp alanı seçiminde güvenlik öncelikli, aydınlatmalı alanları tercih edin</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-xl mx-auto mb-4">
+<i class="ri-drop-line text-2xl text-secondary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Su Kaynağı</h3>
+<p class="text-gray-600 text-sm">Temiz su kaynaklarına yakın konumlarda kamp kurun</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-cyan-500/10 rounded-xl mx-auto mb-4">
+<i class="ri-wifi-line text-2xl text-cyan-500"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">İletişim</h3>
+<p class="text-gray-600 text-sm">Mobil sinyal gücünü kontrol edin, acil durumlar için hazırlıklı olun</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 flex items-center justify-center bg-green-500/10 rounded-xl mx-auto mb-4">
+<i class="ri-leaf-line text-2xl text-green-500"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Doğa Dostu</h3>
+<p class="text-gray-600 text-sm">Çevreye saygılı olun, atıklarınızı doğru şekilde bertaraf edin</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Hakkımızda Sayfası -->
+<div id="hakkimizda-page" class="page-content hidden">
+<section class="pt-24 pb-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h1 class="text-5xl font-bold text-gray-900 mb-6">Hakkımızda</h1>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Denizcilik tutkusu ile başlayan yolculuğumuz</p>
+</div>
+<!-- Story Section -->
+<div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Hikayemiz</h2>
+<p class="text-gray-600 mb-6 leading-relaxed">
+
+</p>
+<p class="text-gray-600 mb-6 leading-relaxed">
+Yelkenli maceraları, karavan yolculukları ve denizcilik teknikleri konularında edindiğimiz bilgileri paylaşarak, deniz tutkunlarının güvenli ve keyifli seyirler yapmasına katkıda bulunmayı hedefliyoruz.
+</p>
+<div class="flex items-center space-x-6">
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">500+</div>
+<div class="text-sm text-gray-600">Blog Yazısı</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">50+</div>
+<div class="text-sm text-gray-600">Karavan Rotası</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">10K+</div>
+<div class="text-sm text-gray-600">Takipçi</div>
+</div>
+</div>
+</div>
+<div class="h-96 bg-cover bg-center rounded-2xl" style="background-image: url('https://readdy.ai/api/search-image?query=sailing%20team%20crew%20on%20yacht%20deck%20professional%20sailors%20nautical%20lifestyle%20sailing%20adventure%20teamwork%20maritime%20experience%20ocean%20sailing%20yacht%20crew%20sailing%20professionals&width=600&height=400&seq=team&orientation=landscape')"></div>
+</div>
+<!-- Team Section -->
+<div class="mb-20">
+<h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Ekibimiz</h2>
+<div class="flex justify-center">
+  <div class="bg-white rounded-2xl p-8 text-center shadow-lg">
+    <div class="w-24 h-24 bg-cover bg-center rounded-full mx-auto mb-6" style="background-image: url('Kaptan1.jpeg')"></div>
+    <h3 class="text-xl font-bold text-gray-900 mb-2">Kurucu</h3>
+    <p class="text-primary font-semibold mb-3">Kaptan</p>
+    <p class="text-gray-600 text-sm">Gemide 2. Kaptan , karavancılık konusunda oldukça deneyimli,gemi mühendisi.</p>
+  </div>
+</div>
+</div>
+<!-- Contact Section -->
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<h2 class="text-3xl font-bold text-gray-900 text-center mb-8">İletişim</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Bizimle İletişime Geçin</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg mr-4">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<div class="font-semibold text-gray-900">E-posta</div>
+<div class="text-gray-600">info@viyakaptan.com</div>
+</div>
+<div>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg mr-4">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<div class="font-semibold text-gray-900">Adres</div>
+<div class="text-gray-600">Kalamış Marina Fenerbahçe, Kadıköy/İstanbul, Türkiye</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Sosyal Medya</h3>
+<div class="flex space-x-4">
+<a href="#" class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors">
+<i class="ri-instagram-line text-xl"></i>
+</a>
+<a href="#" class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors">
+<i class="ri-tiktok-line text-xl"></i>
+</a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8">
+<div class="col-span-1">
+<h3 class="text-2xl font-['Pacifico'] text-primary mb-4">ViyaKaptan</h3>
+<p class="text-gray-400 mb-6">Denizlerin büyüsünü keşfedin, yelkenli maceraları yaşayın</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-lg transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-lg transition-colors">
+<i class="ri-tiktok-line"></i>
+</a>
+
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Kategoriler</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Yelkenli Maceraları</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Karavan Rotaları</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Navigasyon</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Marina Rehberleri</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Hızlı Linkler</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Ana Sayfa</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Denizcilik</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Karavan</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Hakkımızda</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">İletişim</h4>
+<ul class="space-y-2 text-gray-400">
+<li class="flex items-center">
+<i class="ri-mail-line mr-2"></i>
+info@viyakaptan.com
+</li>
+<li class="flex items-center">
+<i class="ri-map-pin-line mr-2"></i>
+  Kalamış Marina Fenerbahçe, Kadıköy/İstanbul, Türkiye
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+  <p>&copy;2025 Viya Kaptan. Tüm hakları saklıdır.</p>
+  Designed by <a href="https://nuryazilim.com/">Nur Yazılım</a>
+</div>
+</div>
+</footer>
+<script id="navigation-script">
+document.addEventListener('DOMContentLoaded', function() {
+const navLinks = document.querySelectorAll('.nav-link');
+const pages = document.querySelectorAll('.page-content');
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+function showPage(pageId) {
+pages.forEach(page => page.classList.add('hidden'));
+document.getElementById(pageId).classList.remove('hidden');
+navLinks.forEach(link => {
+link.classList.remove('text-primary');
+link.classList.add('text-gray-700');
+});
+}
+navLinks.forEach((link, index) => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const pageIds = ['home-page', 'blog-page', 'karavan-page', 'hakkimizda-page'];
+showPage(pageIds[index]);
+this.classList.remove('text-gray-700');
+this.classList.add('text-primary');
+if (!mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.add('hidden');
+}
+});
+});
+document.querySelectorAll('#mobile-menu a').forEach((link, index) => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const pageIds = ['home-page', 'blog-page', 'karavan-page', 'hakkimizda-page'];
+showPage(pageIds[index]);
+mobileMenu.classList.add('hidden');
+});
+});
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+navLinks[0].classList.add('text-primary');
+navLinks[0].classList.remove('text-gray-700');
+});
+</script>
+<script id="cta-buttons-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogButton = document.getElementById('go-to-blog');
+const karavanButton = document.getElementById('go-to-karavan');
+if (blogButton) {
+  blogButton.addEventListener('click', function() {
+    document.getElementById('home-page').classList.add('hidden');
+    document.getElementById('blog-page').classList.remove('hidden');
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('text-primary');
+      link.classList.add('text-gray-700');
+    });
+    document.querySelectorAll('.nav-link')[1].classList.add('text-primary');
+    document.querySelectorAll('.nav-link')[1].classList.remove('text-gray-700');
+  });
+}
+if (karavanButton) {
+  karavanButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('home-page').classList.add('hidden');
+    document.getElementById('karavan-page').classList.remove('hidden');
+    document.getElementById('karavan-page').scrollIntoView({ behavior: 'smooth' });
+    // Menüdeki nav-link'leri güncelle
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('text-primary');
+      link.classList.add('text-gray-700');
+    });
+    // Karavan sekmesini aktif yap (sıralama: Ana Sayfa, Denizcilik, Karavan, Hakkımızda)
+    document.querySelectorAll('.nav-link')[2].classList.add('text-primary');
+    document.querySelectorAll('.nav-link')[2].classList.remove('text-gray-700');
+  });
+}
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const goToBlogBtn = document.getElementById('go-to-blog');
+  if (goToBlogBtn) {
+    goToBlogBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('home-page').classList.add('hidden');
+      document.getElementById('blog-page').classList.remove('hidden');
+      document.getElementById('blog-page').scrollIntoView({ behavior: 'smooth' });
+      // Menüdeki nav-link'leri güncelle
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('text-primary');
+        link.classList.add('text-gray-700');
+      });
+      // Denizcilik sekmesini aktif yap (sıralama: Ana Sayfa, Denizcilik, Karavan, Hakkımızda)
+      document.querySelectorAll('.nav-link')[1].classList.add('text-primary');
+      document.querySelectorAll('.nav-link')[1].classList.remove('text-gray-700');
+    });
+  }
+});
+</script>
+<script defer id="viyakaptan-blog-script">
+(() => {
+  'use strict';
+
+  /** =========================
+   *   CONFIG — DÜZENLE
+   *  ========================= */
+  const CONFIG = {
+    // Liste uç noktası: ?limit=9 gibi parametre ekler
+    API_LIST_URL: 'https://viyakaptan.com/api/posts',
+    // Detay uç noktası: {slug} veya {id} yer tutucu kullan
+    API_DETAIL_URL: 'https://viyakaptan.com/api/posts/{slug}',
+
+    // JSON alan adları (Laravel/Filament’teki isimlere göre uyarlayabilirsin)
+    FIELDS: {
+      id: 'id',
+      title: 'title',
+      slug: 'slug',
+      excerpt: 'excerpt',
+      cover: 'image_url',      // ör: 'cover_image' ise bunu değiştir
+      date: 'published_at',
+      content: 'content'       // detay API’n sınırlandırılmışsa burada olmayabilir; sorun değil
+    },
+
+    // Blog görünümünü basacağımız yer (blog-page bölümünün içinde bulunmalı)
+    SELECTORS: {
+      BLOG_PAGE: '#blog-page',            // senin mevcut bölümlerinle uyumlu
+      LIST_MOUNT: '#blog-list',           // listeyi buraya basacağız
+      DETAIL_MOUNT: '#blog-detail'        // detayı buraya basacağız
+    },
+
+    LIMIT: 9
+  };
+
+  /** =========================
+   *   UTILS
+   *  ========================= */
+  const qs  = (s, r=document) => r.querySelector(s);
+  const qsa = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const esc = (s) => (s == null ? '' : String(s));
+  const fmtDate = (iso) => {
+    try { const d = new Date(iso); if (isNaN(d)) return ''; return d.toLocaleDateString('tr-TR',{day:'2-digit',month:'long',year:'numeric'}); }
+    catch { return ''; }
+  };
+  const jget = (obj, key, fallback='') => (obj && key in obj) ? obj[key] : fallback;
+
+  // API yardımcıları
+  const getList = async (limit) => {
+    const url = new URL(CONFIG.API_LIST_URL, window.location.origin);
+    if (!url.searchParams.has('limit')) url.searchParams.set('limit', String(limit ?? CONFIG.LIMIT));
+    const res = await fetch(url.toString(), { mode:'cors', credentials:'omit' });
+    if (!res.ok) throw new Error('Liste HTTP ' + res.status);
+    const data = await res.json();
+    // {data:[...]} | {posts:[...]} | [...]
+    if (Array.isArray(data)) return data;
+    if (Array.isArray(data.data)) return data.data;
+    if (Array.isArray(data.posts)) return data.posts;
+    const firstArray = Object.values(data).find(v => Array.isArray(v));
+    return firstArray ?? [];
+  };
+
+  const getDetail = async ({ slug, id }) => {
+    // Öncelik slug
+    if (slug) {
+      const url = CONFIG.API_DETAIL_URL.replace('{slug}', encodeURIComponent(slug)).replace('{id}', encodeURIComponent(slug));
+      const res = await fetch(url, { mode:'cors', credentials:'omit' });
+      if (res.ok) return await res.json();
+    }
+    // Slug yoksa id dene
+    if (id != null) {
+      const url = CONFIG.API_DETAIL_URL.replace('{slug}', encodeURIComponent(String(id))).replace('{id}', encodeURIComponent(String(id)));
+      const res = await fetch(url, { mode:'cors', credentials:'omit' });
+      if (res.ok) return await res.json();
+    }
+    throw new Error('Detay bulunamadı');
+  };
+
+  // Router benzeri: /blog/slug desenini yakala
+  const getPathSlug = () => {
+    const m = window.location.pathname.match(/\/blog\/([^\/?#]+)/i);
+    return m ? decodeURIComponent(m[1]) : null;
+  };
+
+  // Mount noktalarını hazırla (yoksa oluştur)
+  const ensureMounts = () => {
+    const blogPage = qs(CONFIG.SELECTORS.BLOG_PAGE) || document.body;
+    let list = qs(CONFIG.SELECTORS.LIST_MOUNT, blogPage);
+    let detail = qs(CONFIG.SELECTORS.DETAIL_MOUNT, blogPage);
+
+    if (!list) {
+      list = document.createElement('div');
+      list.id = CONFIG.SELECTORS.LIST_MOUNT.replace('#','');
+      blogPage.appendChild(list);
+    }
+    if (!detail) {
+      detail = document.createElement('div');
+      detail.id = CONFIG.SELECTORS.DETAIL_MOUNT.replace('#','');
+      detail.classList.add('hidden');
+      blogPage.appendChild(detail);
+    }
+    return { blogPage, listMount: list, detailMount: detail };
+  };
+
+  // Listeyi çiz
+  const renderList = (items, mount) => {
+    const F = CONFIG.FIELDS;
+    if (!items || items.length === 0) {
+      mount.innerHTML = `<p class="text-sm text-gray-500">Henüz içerik yok.</p>`;
+      return;
+    }
+    // basit grid
+    const cards = items.map(it => {
+      const id = jget(it, F.id);
+      const slug = jget(it, F.slug);
+      const title = esc(jget(it, F.title));
+      const excerpt = esc(jget(it, F.excerpt));
+      const cover = esc(jget(it, F.cover));
+      const date = jget(it, F.date);
+
+      return `
+        <article class="border rounded-xl overflow-hidden bg-white shadow-sm">
+          ${cover ? `<img src="${cover}" alt="${title}" class="w-full h-48 object-cover">` : ''}
+          <div class="p-4">
+            <h3 class="font-bold text-lg mb-2">${title}</h3>
+            ${excerpt ? `<p class="text-sm text-gray-600 mb-3 line-clamp-3">${excerpt}</p>` : ``}
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-500">${fmtDate(date)}</span>
+              <a href="/blog/${encodeURIComponent(slug || id)}" data-blog-read class="text-primary text-sm font-medium">
+                Devamını İncele →
+              </a>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    mount.innerHTML = `
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        ${cards}
+      </div>
+    `;
+
+    // Click -> detay
+    qsa('[data-blog-read]', mount).forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = a.getAttribute('href') || '';
+        const slug = (href.split('/blog/')[1] || '').split(/[?#]/)[0];
+        if (slug) openDetail({ slug });
+      });
+    });
+  };
+
+  // Detayı çiz
+  const renderDetail = (post, mount) => {
+    const F = CONFIG.FIELDS;
+    const title = esc(jget(post, F.title));
+    const cover = esc(jget(post, F.cover));
+    const date = jget(post, F.date);
+    const contentRaw = jget(post, F.content); // HTML olabilir
+    const excerpt = esc(jget(post, F.excerpt));
+
+    mount.innerHTML = `
+      <article class="max-w-3xl mx-auto">
+        <a href="/blog" data-back class="inline-flex items-center text-sm text-gray-600 mb-4">← Geri</a>
+        <h1 class="text-2xl font-extrabold mb-2">${title}</h1>
+        <div class="text-xs text-gray-500 mb-4">${fmtDate(date)}</div>
+        ${cover ? `<img src="${cover}" alt="${title}" class="w-full h-64 object-cover rounded-lg mb-6">` : ''}
+        <div class="prose max-w-none">
+          ${
+            contentRaw
+              ? contentRaw // güvenilir kaynaktan geliyorsa HTML
+              : (excerpt ? `<p>${excerpt}</p>` : `<p>İçerik yakında.</p>`)
+          }
+        </div>
+      </article>
+    `;
+
+    const back = qs('[data-back]', mount);
+    if (back) {
+      back.addEventListener('click', (e) => {
+        e.preventDefault();
+        openList(); // geri listeye
+      });
+    }
+  };
+
+  // Görünümleri değiştir
+  const showListView = (listMount, detailMount) => {
+    detailMount.classList.add('hidden');
+    listMount.classList.remove('hidden');
+    // URL'i /blog olarak ayarla
+    window.history.pushState({ view:'list' }, '', '/blog');
+  };
+
+  const showDetailView = (listMount, detailMount, slug) => {
+    listMount.classList.add('hidden');
+    detailMount.classList.remove('hidden');
+    // URL’i /blog/slug yap
+    window.history.pushState({ view:'detail', slug }, '', `/blog/${encodeURIComponent(slug)}`);
+  };
+
+  // Aç/kapat akışı
+  const mounts = ensureMounts();
+  let cachedList = null;
+
+  const openList = async () => {
+    try {
+      if (!cachedList) cachedList = await getList(CONFIG.LIMIT);
+      renderList(cachedList, mounts.listMount);
+      showListView(mounts.listMount, mounts.detailMount);
+    } catch (err) {
+      mounts.listMount.innerHTML = `<p class="text-sm text-red-600">İçerik yüklenirken hata oluştu.</p>`;
+      console.error(err);
+    }
+  };
+
+  const openDetail = async ({ slug, id }) => {
+    try {
+      // Önce listeden eşleşeni bul (detay alanları kısıtlı olabilir)
+      let fromList = null;
+      if (cachedList) {
+        const F = CONFIG.FIELDS;
+        fromList = cachedList.find(p =>
+          (slug && jget(p, F.slug) === slug) ||
+          (id != null && jget(p, F.id) === id)
+        ) || null;
+      }
+      // API’den detay çek
+      let detail = null;
+      try {
+        detail = await getDetail({ slug, id });
+        // {data:{...}} vs olabilir
+        if (!detail || Array.isArray(detail)) detail = detail;
+        else if ('data' in detail) detail = detail.data;
+      } catch (e) {
+        // Detay endpoint yoksa, listeden render edeceğiz
+        detail = fromList || null;
+      }
+      if (!detail) throw new Error('Yazı bulunamadı');
+
+      renderDetail(detail, mounts.detailMount);
+      showDetailView(mounts.listMount, mounts.detailMount, slug || id);
+    } catch (err) {
+      mounts.detailMount.innerHTML = `<p class="text-sm text-red-600">Yazı getirilirken hata oluştu.</p>`;
+      mounts.detailMount.classList.remove('hidden');
+      mounts.listMount.classList.add('hidden');
+      console.error(err);
+    }
+  };
+
+  // Geri/ileri düğmeleri
+  window.addEventListener('popstate', (e) => {
+    const slug = getPathSlug();
+    if (slug) openDetail({ slug });
+    else openList();
+  });
+
+  // İlk yükleme
+  document.addEventListener('DOMContentLoaded', () => {
+    const slug = getPathSlug();
+    if (slug) openDetail({ slug });
+    else openList();
+  });
+
+})();
+</script>
+<script defer>
+(() => {
+  'use strict';
+
+  // ---- CONFIG: endpoint ve alan adlarını düzelt ----
+  const API_DETAIL = (slug) => `https://viyakaptan.com/api/posts/${encodeURIComponent(slug)}`;
+  const FIELDS = { title:'title', date:'published_at', cover:'image_url', content:'content', excerpt:'excerpt' };
+
+  const fmtDate = (iso) => {
+    try { const d = new Date(iso); if (isNaN(d)) return ''; return d.toLocaleDateString('tr-TR',{day:'2-digit',month:'long',year:'numeric'}); }
+    catch { return ''; }
+  };
+  const jget = (o,k,f='') => (o && k in o) ? o[k] : f;
+  const esc = (s) => (s==null ? '' : String(s));
+
+  const mountIds = { page:'#blog-page', detail:'#blog-detail' };
+
+  const renderDetail = (post) => {
+    const m = document.querySelector(mountIds.detail);
+    if (!m) return;
+    const title = esc(jget(post, FIELDS.title));
+    const cover = esc(jget(post, FIELDS.cover));
+    const date  = jget(post, FIELDS.date);
+    const content = jget(post, FIELDS.content);
+    const excerpt = esc(jget(post, FIELDS.excerpt));
+
+    m.innerHTML = `
+      <article class="max-w-3xl mx-auto">
+        <a href="/blog" data-back class="inline-flex items-center text-sm text-gray-600 mb-4">← Geri</a>
+        <h1 class="text-2xl font-extrabold mb-2">${title}</h1>
+        <div class="text-xs text-gray-500 mb-4">${fmtDate(date)}</div>
+        ${cover ? `<img src="${cover}" alt="${title}" class="w-full h-64 object-cover rounded-lg mb-6">` : ''}
+        <div class="prose max-w-none">
+          ${content ? content : (excerpt ? `<p>${excerpt}</p>` : `<p>İçerik yakında.</p>`)}
+        </div>
+      </article>
+    `;
+  };
+
+  const showDetail = (slug) => {
+    const page = document.querySelector(mountIds.page);
+    const detail = document.querySelector(mountIds.detail);
+    if (!page || !detail) return;
+    // Listeyi gizlemek istiyorsan burada gizleyebilirsin: page içinde liste alanını .hidden yap
+    detail.classList.remove('hidden');
+    history.pushState({view:'detail', slug}, '', `/blog/${encodeURIComponent(slug)}`);
+  };
+
+  const loadDetail = async (slug) => {
+    const detailMount = document.querySelector(mountIds.detail);
+    if (!detailMount) return;
+    detailMount.innerHTML = `<p class="text-sm text-gray-500">Yükleniyor…</p>`;
+    try {
+      const res = await fetch(API_DETAIL(slug), { mode:'cors', credentials:'omit' });
+      if (!res.ok) throw new Error('HTTP '+res.status);
+      let data = await res.json();
+      // {data:{...}} olabilir
+      if (data && typeof data === 'object' && 'data' in data) data = data.data;
+      renderDetail(data);
+      showDetail(slug);
+    } catch (e) {
+      detailMount.innerHTML = `<p class="text-sm text-red-600">Yazı yüklenemedi.</p>`;
+      console.error(e);
+    }
+  };
+
+  const getSlugFromPath = () => {
+    const m = location.pathname.match(/\/blog\/([^\/?#]+)/i);
+    return m ? decodeURIComponent(m[1]) : null;
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const blogPage = document.querySelector(mountIds.page);
+    if (!blogPage) return;
+
+    // Delegation: sadece data-load="detail" linkleri
+    blogPage.addEventListener('click', (e) => {
+      const a = e.target.closest('a.read-more[data-load="detail"][data-slug]');
+      if (!a) return;
+      e.preventDefault();
+      const slug = a.getAttribute('data-slug');
+      if (slug) loadDetail(slug);
+    });
+
+    // Geri butonu
+    blogPage.addEventListener('click', (e) => {
+      const back = e.target.closest('a[data-back]');
+      if (!back) return;
+      e.preventDefault();
+      history.pushState({view:'list'}, '', '/blog');
+      // İstersen burada detay alanını gizleyip listeyi göster
+      const detail = document.querySelector(mountIds.detail);
+      if (detail) detail.classList.add('hidden');
+      // Liste görünümünü senin mevcut scriptlerin zaten yönetiyor
+    });
+
+    // Doğrudan /blog/slug ile gelinirse
+    const directSlug = getSlugFromPath();
+    if (directSlug) loadDetail(directSlug);
+
+    // Geri/ileri tuşları
+    window.addEventListener('popstate', () => {
+      const s = getSlugFromPath();
+      if (s) loadDetail(s);
+      else {
+        const detail = document.querySelector(mountIds.detail);
+        if (detail) detail.classList.add('hidden');
+      }
+    });
+  });
+})();
+</script>
+<script defer id="blog-detail-safe">
+(() => {
+  'use strict';
+
+  // ---- CONFIG: endpoint ve alan adlarını kendi API’ne göre düzenle ----
+  const API_DETAIL = (slug) => `https://viyakaptan.com/api/posts/${encodeURIComponent(slug)}`;
+  const FIELDS = { title:'title', date:'published_at', cover:'image_url', content:'content', excerpt:'excerpt' };
+
+  const qs=(s,r=document)=>r.querySelector(s);
+  const esc=(v)=>v==null?'':String(v);
+  const jget=(o,k,f='')=>(o && k in o)?o[k]:f;
+  const fmtDate=(iso)=>{ try{const d=new Date(iso); if(isNaN(d)) return ''; return d.toLocaleDateString('tr-TR',{day:'2-digit',month:'long',year:'numeric'});}catch{return '';} };
+
+  function renderDetail(post){
+    const mount = qs('#blog-detail');
+    if(!mount) return;
+    const title = esc(jget(post, FIELDS.title));
+    const cover = esc(jget(post, FIELDS.cover));
+    const date  = jget(post, FIELDS.date);
+    const content = jget(post, FIELDS.content);
+    const excerpt = esc(jget(post, FIELDS.excerpt));
+    mount.innerHTML = `
+      <article class="max-w-3xl mx-auto">
+        <a href="/blog" data-back class="inline-flex items-center text-sm text-gray-600 mb-4">← Geri</a>
+        <h1 class="text-2xl font-extrabold mb-2">${title}</h1>
+        <div class="text-xs text-gray-500 mb-4">${fmtDate(date)}</div>
+        ${cover ? `<img src="${cover}" alt="${title}" class="w-full h-64 object-cover rounded-lg mb-6">` : ''}
+        <div class="prose max-w-none">
+          ${content ? content : (excerpt ? `<p>${excerpt}</p>` : `<p>İçerik yakında.</p>`)}
+        </div>
+      </article>`;
+  }
+
+  async function loadDetail(slug){
+    const detailMount = qs('#blog-detail');
+    if(!detailMount) return;
+    detailMount.classList.remove('hidden');
+    detailMount.innerHTML = `<p class="text-sm text-gray-500">Yükleniyor…</p>`;
+    try{
+      const res = await fetch(API_DETAIL(slug), {mode:'cors', credentials:'omit'});
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      let data = await res.json();
+      if (data && typeof data==='object' && 'data' in data) data = data.data; // {data:{...}} desteği
+      renderDetail(data);
+      // Başarılı olduktan sonra URL’i değiştir
+      try{ history.pushState({view:'detail', slug}, '', `/blog/${encodeURIComponent(slug)}`);}catch{}
+    }catch(err){
+      detailMount.innerHTML = `<p class="text-sm text-red-600">Yazı yüklenemedi.</p>`;
+      // Konsola hata düşsün ama sayfa çökmesin
+      console.error(err);
+    }
+  }
+
+  // Delegation: sadece blog-page içinde, sadece read-more linkleri
+  document.addEventListener('DOMContentLoaded', () => {
+    const blogPage = qs('#blog-page');
+    if(!blogPage) return; // bu sayfada blog bölümü yoksa hiç çalışmaz
+
+    blogPage.addEventListener('click', (e) => {
+      const a = e.target.closest('a.read-more[data-load="detail"][data-slug]');
+      if(!a) return;
+      e.preventDefault();
+      const slug = a.getAttribute('data-slug');
+      if(slug) loadDetail(slug);
+    });
+
+    // Geri bağlantısı
+    blogPage.addEventListener('click', (e) => {
+      const back = e.target.closest('[data-back]');
+      if(!back) return;
+      e.preventDefault();
+      try{ history.pushState({view:'list'}, '', '/blog'); }catch{}
+      // Detay alanını gizlemek istersen:
+      const d = qs('#blog-detail'); if(d) d.classList.add('hidden');
+      // Liste görünümünü senin mevcut scriptlerin yönetiyor
+    });
+
+    // Sayfa doğrudan /blog/slug ile açıldıysa otomatik yükle
+    const m = location.pathname.match(/\/blog\/([^\/?#]+)/i);
+    if (m && m[1]) loadDetail(decodeURIComponent(m[1]));
+  });
+
+})();
+</script>
+<script defer>
+(() => {
+  'use strict';
+
+  // === AYARLAR ===
+  const API_ROUTES = '/api/routes'; // Filament'te "Caravan Routes" için liste endpoint'in
+  const MAP = {
+    title: 'title',
+    slug: 'slug',
+    excerpt: 'excerpt',
+    cover: 'image_url',     // cover_image ise bunu değiştir
+    distance: 'distance_km',
+    days: 'days',
+    difficulty: 'difficulty',
+    date: 'published_at'
+  };
+
+  const $ = (s, r=document)=>r.querySelector(s);
+  const $$ = (s, r=document)=>Array.from(r.querySelectorAll(s));
+  const txt = (el, v)=>{ if(el && v!=null) el.textContent = String(v); };
+  const fmt = (iso)=>{ try{const d=new Date(iso); return isNaN(d)?'':d.toLocaleDateString('tr-TR',{day:'2-digit',month:'long',year:'numeric'});}catch{return '';} };
+
+  async function fetchJSON(url){
+    const res = await fetch(url, {mode:'cors', credentials:'omit'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const ct = res.headers.get('content-type') || '';
+    if(!ct.includes('application/json')) throw new Error('JSON değil');
+    return res.json();
+  }
+
+  async function getRoutes(limit=3){
+    const u = new URL(API_ROUTES, location.origin);
+    u.searchParams.set('limit', String(limit));
+    const data = await fetchJSON(u.toString());
+    if (Array.isArray(data)) return data;
+    if (Array.isArray(data.data)) return data.data;
+    const firstArray = Object.values(data).find(v=>Array.isArray(v));
+    return firstArray ?? [];
+  }
+
+  // Bir kartın içini doldur (senin mevcut yapına göre seçiciler)
+  function fillCard(card, item){
+    const title = card.querySelector('h3, .card-title');
+    const excerpt = card.querySelector('p, .card-excerpt');
+    const dateEl = card.querySelector('.text-gray-500, .card-date');
+    const imgBox = card.querySelector('[style*="background-image"], .card-cover');
+    const btn = card.querySelector('a[href], .btn-primary');
+
+    const t = item[MAP.title];
+    const ex = item[MAP.excerpt];
+    const dt = item[MAP.date];
+    const cover = item[MAP.cover];
+    const slug = item[MAP.slug];
+
+    txt(title, t || title?.textContent);
+    if (excerpt) txt(excerpt, ex || excerpt.textContent);
+    if (dateEl) txt(dateEl, fmt(dt) || dateEl.textContent);
+    if (imgBox && cover) imgBox.style.backgroundImage = `url('${cover}')`;
+    if (btn && slug) {
+      btn.setAttribute('href', `/rota-detay.html?slug=${encodeURIComponent(slug)}`);
+      btn.setAttribute('data-slug', slug);
+    }
+
+    // varsa ikonlu metrik alanlarını da güncelle
+    const metrics = card.querySelectorAll('.font-semibold');
+    if (metrics?.length) {
+      if (item[MAP.distance] != null) metrics[0].textContent = item[MAP.distance] + ' km';
+      if (item[MAP.days] != null)     metrics[1].textContent = item[MAP.days] + ' gün';
+      if (item[MAP.difficulty])       metrics[2].textContent = item[MAP.difficulty];
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    // Karavan grid konteynerini bulalım (senin ekran görüntündeki gibi)
+    const karavanSection = document.getElementById('karavan-page') || document.body;
+    const grid = karavanSection.querySelector('.grid.md\\:grid-cols-2, .grid.lg\\:grid-cols-3, .grid'); // esnek
+    if (!grid) return;
+
+    const cards = Array.from(grid.children).filter(n => n.matches('article, div, section'));
+    if (!cards.length) return;
+
+    // İlk kartı şablon alalım
+    const template = cards[0];
+
+    try{
+      const items = await getRoutes(3);
+      if (!items.length) return; // veri yoksa senin statik tasarımın kalır
+
+      // 3 karta veri yaz: ilk kartı da dahil doldur
+      items.slice(0,3).forEach((it, idx) => {
+        const card = cards[idx] || template.cloneNode(true);
+        fillCard(card, it);
+        if (!cards[idx]) grid.appendChild(card);
+      });
+    }catch(e){
+      console.warn('Karavan listesi yüklenemedi:', e);
+      // Hata olsa bile hiçbir şeyi bozmuyoruz
+    }
+  });
+})();
+</script>
+
+</body>
+
+</html>
