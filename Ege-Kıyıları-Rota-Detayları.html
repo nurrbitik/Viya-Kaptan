@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ege Kıyıları Rotası - DenizYolculuğu</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0ea5e9',
+secondary: '#06b6d4'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-gray-50">
+
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a href="index.html" data-readdy="true" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+<i class="ri-arrow-left-line text-xl"></i>
+</a>
+<h1 class="text-2xl font-bold text-gray-900">Ege Kıyıları Rotası</h1>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Route Map -->
+<section class="bg-white">
+<div class="w-full h-96 relative" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-4 right-4 flex flex-col space-y-2">
+<button class="w-10 h-10 flex items-center justify-center bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+<i class="ri-add-line text-xl text-gray-700"></i>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+<i class="ri-subtract-line text-xl text-gray-700"></i>
+</button>
+</div>
+<div class="absolute bottom-4 left-4 bg-white rounded-lg px-4 py-2 shadow-md">
+<div class="flex items-center space-x-2">
+<div class="w-3 h-3 bg-primary rounded-full"></div>
+<span class="text-sm font-medium text-gray-700">Çeşme - Bodrum Rotası</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Route Summary -->
+<section class="py-8 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-2">450 km</div>
+<div class="text-sm text-gray-600">Toplam Mesafe</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-2">7 Gün</div>
+<div class="text-sm text-gray-600">Tahmini Süre</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-2">Orta</div>
+<div class="text-sm text-gray-600">Zorluk Seviyesi</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-2">Nisan-Ekim</div>
+<div class="text-sm text-gray-600">Önerilen Sezon</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Route Stops -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Durak Noktaları</h2>
+<div class="space-y-8">
+<div class="flex">
+<div class="flex flex-col items-center mr-6">
+<div class="w-4 h-4 bg-primary rounded-full"></div>
+<div class="w-0.5 h-32 bg-gray-300 mt-2"></div>
+</div>
+<div class="flex-1 bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex flex-col md:flex-row gap-6">
+<div class="md:w-1/3">
+<div class="h-48 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=cesme%20turkey%20beautiful%20coastal%20town%20aegean%20sea%20marina%20harbor%20traditional%20turkish%20seaside%20resort%20crystal%20clear%20turquoise%20water%20charming%20waterfront%20mediterranean%20architecture&width=400&height=300&seq=cesme&orientation=landscape')"></div>
+</div>
+<div class="md:w-2/3">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Çeşme</h3>
+<div class="text-right">
+<div class="text-sm text-gray-500">Başlangıç Noktası</div>
+<div class="text-sm font-medium text-primary">2 gün konaklama</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Ege'nin incisi Çeşme, termal kaynakları ve muhteşem plajları ile rotamızın başlangıç noktası. Marina imkanları mükemmel.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+<div class="flex items-center">
+<i class="ri-flashlight-line text-primary mr-2"></i>
+<span>Elektrik</span>
+</div>
+<div class="flex items-center">
+<i class="ri-drop-line text-primary mr-2"></i>
+<span>Su</span>
+</div>
+<div class="flex items-center">
+<i class="ri-temp-hot-line text-primary mr-2"></i>
+<span>Duş</span>
+</div>
+<div class="flex items-center">
+<i class="ri-wifi-line text-primary mr-2"></i>
+<span>WiFi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex">
+<div class="flex flex-col items-center mr-6">
+<div class="w-4 h-4 bg-primary rounded-full"></div>
+<div class="w-0.5 h-32 bg-gray-300 mt-2"></div>
+</div>
+<div class="flex-1 bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex flex-col md:flex-row gap-6">
+<div class="md:w-1/3">
+<div class="h-48 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=alacati%20turkey%20windmill%20town%20stone%20houses%20traditional%20aegean%20architecture%20charming%20streets%20windsurfing%20paradise%20coastal%20village%20historic%20ottoman%20buildings&width=400&height=300&seq=alacati&orientation=landscape')"></div>
+</div>
+<div class="md:w-2/3">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Alaçatı</h3>
+<div class="text-right">
+<div class="text-sm text-gray-500">65 km</div>
+<div class="text-sm font-medium text-primary">1 gün konaklama</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Rüzgar sörfü merkezi Alaçatı, taş evleri ve dar sokakları ile büyüleyici. Kamp alanı rüzgar korumalı.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+<div class="flex items-center">
+<i class="ri-flashlight-line text-primary mr-2"></i>
+<span>Elektrik</span>
+</div>
+<div class="flex items-center">
+<i class="ri-drop-line text-primary mr-2"></i>
+<span>Su</span>
+</div>
+<div class="flex items-center">
+<i class="ri-temp-hot-line text-primary mr-2"></i>
+<span>Duş</span>
+</div>
+<div class="flex items-center">
+<i class="ri-restaurant-line text-primary mr-2"></i>
+<span>Restoran</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex">
+<div class="flex flex-col items-center mr-6">
+<div class="w-4 h-4 bg-primary rounded-full"></div>
+<div class="w-0.5 h-32 bg-gray-300 mt-2"></div>
+</div>
+<div class="flex-1 bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex flex-col md:flex-row gap-6">
+<div class="md:w-1/3">
+<div class="h-48 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=kusadasi%20turkey%20beautiful%20harbor%20cruise%20port%20aegean%20coast%20pigeon%20island%20castle%20seaside%20resort%20town%20marina%20boats%20coastal%20tourism%20mediterranean%20lifestyle&width=400&height=300&seq=kusadasi&orientation=landscape')"></div>
+</div>
+<div class="md:w-2/3">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Kuşadası</h3>
+<div class="text-right">
+<div class="text-sm text-gray-500">120 km</div>
+<div class="text-sm font-medium text-primary">1 gün konaklama</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Güvercin Adası ve muhteşem marinası ile Kuşadası. Efes antik kenti yakınında, kültür ve deniz bir arada.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+<div class="flex items-center">
+<i class="ri-flashlight-line text-primary mr-2"></i>
+<span>Elektrik</span>
+</div>
+<div class="flex items-center">
+<i class="ri-drop-line text-primary mr-2"></i>
+<span>Su</span>
+</div>
+<div class="flex items-center">
+<i class="ri-temp-hot-line text-primary mr-2"></i>
+<span>Duş</span>
+</div>
+<div class="flex items-center">
+<i class="ri-shopping-cart-line text-primary mr-2"></i>
+<span>Market</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex">
+<div class="flex flex-col items-center mr-6">
+<div class="w-4 h-4 bg-primary rounded-full"></div>
+<div class="w-0.5 h-32 bg-gray-300 mt-2"></div>
+</div>
+<div class="flex-1 bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex flex-col md:flex-row gap-6">
+<div class="md:w-1/3">
+<div class="h-48 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=didim%20turkey%20apollo%20temple%20ancient%20ruins%20aegean%20coast%20historical%20site%20coastal%20town%20archaeological%20wonder%20seaside%20resort%20crystal%20clear%20waters%20beach%20destination&width=400&height=300&seq=didim&orientation=landscape')"></div>
+</div>
+<div class="md:w-2/3">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Didim</h3>
+<div class="text-right">
+<div class="text-sm text-gray-500">180 km</div>
+<div class="text-sm font-medium text-primary">1 gün konaklama</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Apollon Tapınağı ile ünlü Didim, antik tarih ve modern kamp imkanlarını bir arada sunuyor.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+<div class="flex items-center">
+<i class="ri-flashlight-line text-primary mr-2"></i>
+<span>Elektrik</span>
+</div>
+<div class="flex items-center">
+<i class="ri-drop-line text-primary mr-2"></i>
+<span>Su</span>
+</div>
+<div class="flex items-center">
+<i class="ri-temp-hot-line text-primary mr-2"></i>
+<span>Duş</span>
+</div>
+<div class="flex items-center">
+<i class="ri-gas-station-line text-primary mr-2"></i>
+<span>Yakıt</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex">
+<div class="flex flex-col items-center mr-6">
+<div class="w-4 h-4 bg-primary rounded-full"></div>
+</div>
+<div class="flex-1 bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex flex-col md:flex-row gap-6">
+<div class="md:w-1/3">
+<div class="h-48 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=bodrum%20turkey%20castle%20harbor%20marina%20white%20houses%20aegean%20sea%20luxury%20yacht%20destination%20nightlife%20seaside%20resort%20windmills%20coastal%20paradise%20turquoise%20waters&width=400&height=300&seq=bodrum&orientation=landscape')"></div>
+</div>
+<div class="md:w-2/3">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Bodrum</h3>
+<div class="text-right">
+<div class="text-sm text-gray-500">450 km</div>
+<div class="text-sm font-medium text-primary">2 gün konaklama</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Ege'nin gözdesi Bodrum, kalesi ve marinası ile rotamızın son durağı. Lüks kamp imkanları mevcut.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+<div class="flex items-center">
+<i class="ri-flashlight-line text-primary mr-2"></i>
+<span>Elektrik</span>
+</div>
+<div class="flex items-center">
+<i class="ri-drop-line text-primary mr-2"></i>
+<span>Su</span>
+</div>
+<div class="flex items-center">
+<i class="ri-temp-hot-line text-primary mr-2"></i>
+<span>Duş</span>
+</div>
+<div class="flex items-center">
+<i class="ri-wifi-line text-primary mr-2"></i>
+<span>WiFi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Important Points -->
+<section class="py-12 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Önemli Noktalar</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-4">
+<i class="ri-gas-station-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Yakıt İstasyonları</h3>
+<p class="text-gray-600 text-sm mb-3">Rota boyunca 15 yakıt istasyonu</p>
+<div class="space-y-2 text-sm text-gray-500">
+<div>• Shell Çeşme (0 km)</div>
+<div>• BP Alaçatı (65 km)</div>
+<div>• Opet Kuşadası (120 km)</div>
+</div>
+</div>
+<div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-xl mb-4">
+<i class="ri-shopping-cart-line text-2xl text-secondary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Marketler</h3>
+<p class="text-gray-600 text-sm mb-3">Temel ihtiyaçlar için 22 market</p>
+<div class="space-y-2 text-sm text-gray-500">
+<div>• Migros Çeşme</div>
+<div>• CarrefourSA Kuşadası</div>
+<div>• BIM Didim</div>
+</div>
+</div>
+<div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-500/10 rounded-xl mb-4">
+<i class="ri-restaurant-line text-2xl text-orange-500"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Restoranlar</h3>
+<p class="text-gray-600 text-sm mb-3">Yerel lezzetler için 35 restoran</p>
+<div class="space-y-2 text-sm text-gray-500">
+<div>• Balık Evi Çeşme</div>
+<div>• Ege Mutfağı Alaçatı</div>
+<div>• Deniz Restaurant Bodrum</div>
+</div>
+</div>
+<div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-red-500/10 rounded-xl mb-4">
+<i class="ri-hospital-line text-2xl text-red-500"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Sağlık Merkezleri</h3>
+<p class="text-gray-600 text-sm mb-3">Acil durumlar için 8 sağlık merkezi</p>
+<div class="space-y-2 text-sm text-gray-500">
+<div>• Çeşme Devlet Hastanesi</div>
+<div>• Kuşadası Özel Hastane</div>
+<div>• Bodrum Sağlık Merkezi</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Photo Gallery -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Fotoğraf Galerisi</h2>
+<div class="flex overflow-x-auto space-x-4 pb-4" id="photo-gallery">
+<div class="flex-shrink-0 relative cursor-pointer" onclick="openFullscreen(this)">
+<div class="w-80 h-60 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=cesme%20marina%20sunset%20golden%20hour%20yacht%20harbor%20aegean%20sea%20beautiful%20coastal%20scenery%20romantic%20evening%20light%20sailing%20boats%20waterfront%20paradise&width=320&height=240&seq=gallery1&orientation=landscape')"></div>
+<div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-lg text-sm">Çeşme Marina</div>
+</div>
+<div class="flex-shrink-0 relative cursor-pointer" onclick="openFullscreen(this)">
+<div class="w-80 h-60 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=alacati%20windmill%20stone%20houses%20traditional%20aegean%20architecture%20charming%20village%20streets%20historic%20ottoman%20buildings%20cultural%20heritage%20picturesque%20town&width=320&height=240&seq=gallery2&orientation=landscape')"></div>
+<div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-lg text-sm">Alaçatı Sokakları</div>
+</div>
+<div class="flex-shrink-0 relative cursor-pointer" onclick="openFullscreen(this)">
+<div class="w-80 h-60 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=kusadasi%20pigeon%20island%20castle%20aegean%20sea%20crystal%20clear%20turquoise%20water%20historic%20fortress%20coastal%20landmark%20beautiful%20seascape%20tourism%20destination&width=320&height=240&seq=gallery3&orientation=landscape')"></div>
+<div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-lg text-sm">Kuşadası Güvercin Adası</div>
+</div>
+<div class="flex-shrink-0 relative cursor-pointer" onclick="openFullscreen(this)">
+<div class="w-80 h-60 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=didim%20apollo%20temple%20ancient%20ruins%20archaeological%20site%20historical%20columns%20aegean%20coast%20cultural%20heritage%20ancient%20greek%20architecture%20tourism&width=320&height=240&seq=gallery4&orientation=landscape')"></div>
+<div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-lg text-sm">Didim Apollon Tapınağı</div>
+</div>
+<div class="flex-shrink-0 relative cursor-pointer" onclick="openFullscreen(this)">
+<div class="w-80 h-60 bg-cover bg-center rounded-xl" style="background-image: url('https://readdy.ai/api/search-image?query=bodrum%20castle%20harbor%20marina%20luxury%20yachts%20white%20houses%20aegean%20sea%20nightlife%20destination%20coastal%20paradise%20turquoise%20waters%20resort%20town&width=320&height=240&seq=gallery5&orientation=landscape')"></div>
+<div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-lg text-sm">Bodrum Kalesi</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- User Reviews -->
+<section class="py-12 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Kullanıcı Yorumları</h2>
+<div class="space-y-6">
+<div class="bg-gray-50 rounded-2xl p-6">
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 bg-cover bg-center rounded-full flex-shrink-0" style="background-image: url('https://readdy.ai/api/search-image?query=middle%20aged%20man%20portrait%20friendly%20smile%20outdoor%20enthusiast%20caravan%20traveler%20adventure%20lifestyle%20experienced%20camper%20travel%20blogger&width=100&height=100&seq=user1&orientation=squarish')"></div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-semibold text-gray-900">Ahmet Yılmaz</h4>
+<div class="flex items-center space-x-1">
+<div class="flex text-yellow-400">
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+</div>
+<span class="text-sm text-gray-500">5 gün önce</span>
+</div>
+</div>
+<p class="text-gray-600 mb-3">Muhteşem bir rota! Özellikle Alaçatı'daki kamp alanı çok güzeldi. Tüm imkanlar mevcut ve denize çok yakın. Ailecek harika vakit geçirdik.</p>
+<div class="flex space-x-2">
+<div class="w-16 h-16 bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=family%20caravan%20camping%20seaside%20happy%20vacation%20beach%20camping%20rv%20lifestyle%20outdoor%20adventure%20coastal%20camping%20memories&width=100&height=100&seq=review1&orientation=squarish')"></div>
+<div class="w-16 h-16 bg-cover bg-center rounded-lg" style="background-image: url('https://readdy.ai/api/search-image?query=alacati%20camping%20site%20caravan%20park%20seaside%20camping%20facilities%20rv%20hookups%20coastal%20campground%20aegean%20sea%20view&width=100&height=100&seq=review2&orientation=squarish')"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-gray-50 rounded-2xl p-6">
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 bg-cover bg-center rounded-full flex-shrink-0" style="background-image: url('https://readdy.ai/api/search-image?query=woman%20portrait%20outdoor%20enthusiast%20caravan%20traveler%20adventure%20lifestyle%20experienced%20camper%20travel%20blogger%20friendly%20smile&width=100&height=100&seq=user2&orientation=squarish')"></div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-semibold text-gray-900">Elif Kaya</h4>
+<div class="flex items-center space-x-1">
+<div class="flex text-yellow-400">
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-line text-sm"></i>
+</div>
+<span class="text-sm text-gray-500">1 hafta önce</span>
+</div>
+</div>
+<p class="text-gray-600">Rotadaki tüm duraklar çok güzel planlanmış. Özellikle Bodrum'daki marina imkanları mükemmel. Tek eksik bazı yerlerde WiFi sinyali zayıf.</p>
+</div>
+</div>
+</div>
+
+<div class="bg-gray-50 rounded-2xl p-6">
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 bg-cover bg-center rounded-full flex-shrink-0" style="background-image: url('https://readdy.ai/api/search-image?query=elderly%20man%20portrait%20experienced%20traveler%20caravan%20enthusiast%20outdoor%20adventure%20seasoned%20camper%20travel%20expert%20friendly%20grandfather&width=100&height=100&seq=user3&orientation=squarish')"></div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-semibold text-gray-900">Mustafa Özdemir</h4>
+<div class="flex items-center space-x-1">
+<div class="flex text-yellow-400">
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+<i class="ri-star-fill text-sm"></i>
+</div>
+<span class="text-sm text-gray-500">2 hafta önce</span>
+</div>
+</div>
+<p class="text-gray-600">30 yıldır karavan kullanıyorum, bu rota gerçekten çok iyi hazırlanmış. Mesafeler ideal, kamp alanları kaliteli. Herkese tavsiye ederim.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Practical Tips -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Pratik İpuçları</h2>
+<div class="space-y-4">
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors accordion-button" data-target="preparation">
+<h3 class="text-lg font-semibold text-gray-900">Hazırlık Önerileri</h3>
+<i class="ri-arrow-down-s-line text-xl text-gray-500 transform transition-transform"></i>
+</button>
+<div id="preparation" class="accordion-content hidden px-6 pb-6">
+<div class="space-y-4 text-gray-600">
+<p>• Yolculuk öncesi karavanınızın teknik kontrolünü mutlaka yaptırın</p>
+<p>• Su ve elektrik bağlantılarını test edin</p>
+<p>• Acil durum kiti hazırlayın (ilk yardım, araç gereçleri)</p>
+<p>• Rota boyunca hava durumunu takip edin</p>
+<p>• Rezervasyon gerektiren kamp alanları için önceden iletişime geçin</p>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors accordion-button" data-target="safety">
+<h3 class="text-lg font-semibold text-gray-900">Güvenlik Tavsiyeleri</h3>
+<i class="ri-arrow-down-s-line text-xl text-gray-500 transform transition-transform"></i>
+</button>
+<div id="safety" class="accordion-content hidden px-6 pb-6">
+<div class="space-y-4 text-gray-600">
+<p>• Gece kamp kurarken aydınlatmalı ve güvenli alanları tercih edin</p>
+<p>• Değerli eşyalarınızı görünür yerlerde bırakmayın</p>
+<p>• Acil durum numaralarını telefonunuza kaydedin</p>
+<p>• Yangın söndürücü ve duman dedektörü bulundurun</p>
+<p>• Komşu karavancılarla iletişim halinde olun</p>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors accordion-button" data-target="seasonal">
+<h3 class="text-lg font-semibold text-gray-900">Mevsimsel Öneriler</h3>
+<i class="ri-arrow-down-s-line text-xl text-gray-500 transform transition-transform"></i>
+</button>
+<div id="seasonal" class="accordion-content hidden px-6 pb-6">
+<div class="space-y-4 text-gray-600">
+<p>• <strong>İlkbahar (Nisan-Mayıs):</strong> Sıcaklık ideal, kalabalık az</p>
+<p>• <strong>Yaz (Haziran-Ağustos):</strong> Sıcak, rezervasyon şart</p>
+<p>• <strong>Sonbahar (Eylül-Ekim):</strong> En ideal dönem, deniz hala sıcak</p>
+<p>• <strong>Kış:</strong> Bazı kamp alanları kapalı, hava durumu değişken</p>
+<p>• Meltem rüzgarları için hazırlıklı olun (özellikle Alaçatı)</p>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors accordion-button" data-target="equipment">
+<h3 class="text-lg font-semibold text-gray-900">Ekipman Listesi</h3>
+<i class="ri-arrow-down-s-line text-xl text-gray-500 transform transition-transform"></i>
+</button>
+<div id="equipment" class="accordion-content hidden px-6 pb-6">
+<div class="space-y-4 text-gray-600">
+<p>• <strong>Temel:</strong> Su hortumu, elektrik kablosu, seviye ayar takozu</p>
+<p>• <strong>Konfor:</strong> Dış mekan mobilyaları, tente, barbekü</p>
+<p>• <strong>Güvenlik:</strong> Yangın söndürücü, ilk yardım çantası</p>
+<p>• <strong>Teknoloji:</strong> GPS, mobil internet, güneş paneli</p>
+<p>• <strong>Temizlik:</strong> Çöp torbaları, temizlik malzemeleri</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Fullscreen Modal -->
+<div id="fullscreen-modal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center">
+<div class="relative max-w-4xl max-h-full">
+<button onclick="closeFullscreen()" class="absolute top-4 right-4 text-white hover:text-gray-300 z-10">
+<i class="ri-close-line text-3xl"></i>
+</button>
+<img id="fullscreen-image" class="max-w-full max-h-full object-contain" src="" alt="">
+</div>
+</div>
+
+<script id="accordion-script">
+document.addEventListener('DOMContentLoaded', function() {
+const accordionButtons = document.querySelectorAll('.accordion-button');
+accordionButtons.forEach(button => {
+button.addEventListener('click', function() {
+const target = this.getAttribute('data-target');
+const content = document.getElementById(target);
+const icon = this.querySelector('i');
+const isOpen = !content.classList.contains('hidden');
+document.querySelectorAll('.accordion-content').forEach(item => {
+item.classList.add('hidden');
+});
+document.querySelectorAll('.accordion-button i').forEach(item => {
+item.classList.remove('rotate-180');
+});
+if (!isOpen) {
+content.classList.remove('hidden');
+icon.classList.add('rotate-180');
+}
+});
+});
+});
+</script>
+
+<script id="gallery-script">
+function openFullscreen(element) {
+const modal = document.getElementById('fullscreen-modal');
+const image = document.getElementById('fullscreen-image');
+const bgImage = element.querySelector('div').style.backgroundImage;
+const imageUrl = bgImage.slice(5, -2);
+image.src = imageUrl;
+modal.classList.remove('hidden');
+}
+function closeFullscreen() {
+document.getElementById('fullscreen-modal').classList.add('hidden');
+}
+document.addEventListener('keydown', function(e) {
+if (e.key === 'Escape') {
+closeFullscreen();
+}
+});
+</script>
+
+</body>
+</html>
